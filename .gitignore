@@ -9,4 +9,4 @@
 *.log
 
 # Sensitive data
-*.tfvars
+#*.tfvars
