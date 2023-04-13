@@ -1,7 +1,3 @@
-variable "image_id"{
-  description = "id of the AMI to use to deploy the instance"
-}
-
 variable "instance_type"{
   description = "type of the instance to deploy"
 }

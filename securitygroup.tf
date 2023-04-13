@@ -1,7 +1,7 @@
 resource "aws_security_group" "webserver" {
   name        = "${var.project_name}-http-https"
   description = "Allow ingress traffic 80 and 443"
-  vpc_id      = "vpc-0e46127c16a820fc2"
+  vpc_id      = data.aws_vpc.default.id
 
   ingress {
     description      = "https"
