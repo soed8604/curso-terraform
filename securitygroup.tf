@@ -34,7 +34,7 @@ resource "aws_security_group" "webserver" {
 resource "aws_security_group" "ssh" {
   name        = "${var.project_name}-ssh"
   description = "Allow ingress traffic port 22"
-  vpc_id      = "vpc-0e46127c16a820fc2"
+  vpc_id      = data.aws_vpc.default.id
 
   ingress {
     description      = "ssh"
